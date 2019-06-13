@@ -1,0 +1,25 @@
+{
+  "name": "dynamic-graph",
+  "version": "1.0.0",
+  "description": "A <dynamic-graph> web component",
+  "main": "dynamic-graph.bundle.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thwee-alchemist/dynamic-graph.git"
+  },
+  "keywords": [
+    "dynamic",
+    "force-directed",
+    "graph",
+    "visualization"
+  ],
+  "author": "Joshua Marshall Moore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thwee-alchemist/dynamic-graph/issues"
+  },
+  "homepage": "https://github.com/thwee-alchemist/dynamic-graph#readme"
+}
