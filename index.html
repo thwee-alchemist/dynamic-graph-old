@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>&lt;dynamic-graph&gt;</title>
+    <meta author="joshua.moore@leudla.net">
+    <script type="text/javascript" src="dynamic-graph.bundle.min.js"></script>
+    
+  </head>
+  <body>
+    <h1>&lt;dynamic-graph&gt;</h1>	    
+    <h2>A Web Component</h2>
+    
+    <p>
+      The following is a web component. To use it, include 
+      <ol>
+        <li>dynamic-graph.bundle.min.js</li>
+        <li>fourd.wasm</li>
+      </ol>
+      in the same directory on your web server. 
+    </p>
+
+    <dynamic-graph 
+      id="graph" 
+      width="500" 
+      height="500" 
+      background="#9ACD32">
+    </dynamic-graph>
+    <button id="add-vertex" class="btn btn-outline-primary">Add vertex</button>
+    <button id="add-edge" class="btn btn-outline-primary">Add edge</button>
+
+    <script type="text/javascript">
+
+      var dg = $('#graph').get(0);
+      $('#add-vertex').click(function(){
+        console.log(graph.add_vertex({cube: {size: 10, color: 0x000000}}));
+      })
+
+      $('#add-edge').click(function(){
+        console.log(graph.add_edge(parseInt(prompt('source?')), parseInt(prompt('target?')), {color: 'white'}));
+      })
+    </script>
+  </body>
+</html>
